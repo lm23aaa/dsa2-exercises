@@ -6,10 +6,13 @@ my_int_three = my_int_one + my_int_two
 print(my_int_three)
 
 # 2.
-my_alt_int_one = int(input("enter first integer: "))
-my_alt_int_two = int(input("enter second integer: "))
-my_alt_int_three = my_alt_int_one + my_alt_int_two
-print(my_alt_int_three)
+try:
+    my_alt_int_one = int(input("enter first integer: "))
+    my_alt_int_two = int(input("enter second integer: "))
+    my_alt_int_three = my_alt_int_one + my_alt_int_two
+    print(my_alt_int_three)
+except:
+    print("Non-integer input(s) were supplied, calculation could not be performed!")
 
 # 3.
 def fizzbuzz_failure_message(i):
