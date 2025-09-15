@@ -15,6 +15,23 @@ except:
     print("Non-integer input(s) were supplied, calculation could not be performed!")
 
 # 3.
+def fizzbuzz_simple_main():
+    print("-=-=-=-=-=-=-=-=-")
+    print("-=-=-=-=-=-=-=-=-")
+    print("Welcome to FizzBuzz (simple)")
+
+    for i in range(1, 16):
+        if i % 3 == 0 and i % 5 == 0:
+            print("fizzbuzz")
+        elif i % 3 == 0:
+            print("fizz")
+        elif i % 5 == 0:
+            print("buzz")
+        else:
+            print(i)
+
+fizzbuzz_simple_main()
+
 def fizzbuzz_failure_message(i):
     i_str = str(i)
     
@@ -33,7 +50,7 @@ def fizzbuzz_input_check(i, user_input):
 def fizzbuzz_main():
     print("-=-=-=-=-=-=-=-=-")
     print("-=-=-=-=-=-=-=-=-")
-    print("Welcome to FizzBuzz")
+    print("Welcome to FizzBuzz (game)")
     print("3..2..1..GO!")
 
     for i in range(1, 17):
