@@ -1,4 +1,6 @@
-def LinearSearchAction(numbers, target):
+def LinearSearchAction(list, target):
+    numbers = list.copy()
+    
     for i in range (0,len(numbers)):
         if numbers[i]==target:
             print(f"I found the number {str(target)} in the index {str(i)} of the list.")
