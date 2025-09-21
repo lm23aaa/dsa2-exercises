@@ -1,8 +1,8 @@
-def SelectionSort(list):
+def SelectionSort(list_parameter):
     # Based on psuedocode from DSA2 2.4, amended to sort by asc alphabetically,
     # or asc numerically
     # https://herts.instructure.com/courses/123373/pages/2-dot-4-sorting-algorithms
-    list = list.copy()
+    list = list_parameter.copy()
     result = []
     n = len(list)
     number_of_steps = 0

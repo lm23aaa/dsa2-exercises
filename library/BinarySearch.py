@@ -1,6 +1,6 @@
-def BinarySearchAction(list, target):
+def BinarySearchAction(list_parameter, target):
     found = False
-    numbers = list.copy()
+    numbers = list_parameter.copy()
 
     while not found and len(numbers) > 0:
         index = int(len(numbers) / 2)

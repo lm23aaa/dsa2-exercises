@@ -1,5 +1,6 @@
-def BubbleSort(list):
+def BubbleSort(list_parameter):
     has_swapped = True
+    list = list_parameter.copy()
 
     while (has_swapped == True):
         has_swapped = False

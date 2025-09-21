@@ -1,5 +1,5 @@
-def LinearSearchAction(list, target):
-    numbers = list.copy()
+def LinearSearchAction(list_parameter, target):
+    numbers = list_parameter.copy()
     
     for i in range (0,len(numbers)):
         if numbers[i]==target:
