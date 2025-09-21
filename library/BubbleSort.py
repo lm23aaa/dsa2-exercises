@@ -12,6 +12,7 @@ def BubbleSort(list):
     print(list)
     return list
 
+# TESTING BELOW
 # BubbleSort(["London", "Canterbury", "York", "Leicester"])
 # BubbleSort([3,4,90,75,382,2,8,3,55,32,1,19,0,11])
 # BubbleSort([0.5,0.01,0.001,0.0001,0.7,0.02])

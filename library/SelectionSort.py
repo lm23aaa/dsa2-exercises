@@ -71,7 +71,7 @@ def SelectionSortWordLength(list):
     # print(number_of_steps)
     return result
 
-
+# TESTING BELOW
 # list = ["London", "Canterbury", "York", "Leicester"]
 # list = [3, 1, 4, 2]
 # list = [0.5,0.01,0.001,0.0001,0.7,0.02]
