@@ -1,16 +1,16 @@
-def LinearSearchAction(list_parameter, target):
+def LinearSearch(list_parameter, target):
     numbers = list_parameter.copy()
     
     for i in range (0,len(numbers)):
-        if numbers[i]==target:
+        if int(numbers[i]) == target:
             print(f"I found the number {str(target)} in the index {str(i)} of the list.")
             return i
     
     print(f"Number {str(target)} was not found in the list of numbers.")
     return -1
 
-def LinearSearch():
-    numbers = [int(s) for s in input("Please enter a comma separated, list of integers i.e. -1,0,3,4,56 etc: ").split(',')]
+def LinearSearchUserInput():
+    numbers = input("Please enter a comma separated, list of integers i.e. -1,0,3,4,56 etc: ").split(',')
     target = int(input("Please enter an integer to find in the list: "))
 
-    return LinearSearchAction(numbers, target)
+    return LinearSearch(numbers, target)
