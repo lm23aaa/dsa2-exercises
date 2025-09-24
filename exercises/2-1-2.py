@@ -17,19 +17,21 @@ for i in range(1, 11):
 # 3. Null reference errors
 # Splits a list into even and odd elements
 data = [9,4,5,17,12,14,1,0,3,10,9]
-odd = []
 even = []
+i = 0
 
-for i in range(0, len(data)):
+while i < len(data):
     if data[i] % 2 == 0:
         # Found an even element
         even.append(data[i])
+
+        # Remove element from the list
+        data.pop(i)
     else:
-        # Found an odd element
-        odd.append(data[i])
+        i += 1
 
 print("The even elements are: " + str(even))
-print("The odd elements are: " + str(odd))
+print("The odd elements are: " + str(data))
 
 # 4. Classes
 # Gets the student name by ID
