@@ -1,7 +1,5 @@
-def LinearSearch(list_parameter, target):
-    numbers = list_parameter.copy()
-    
-    for i in range (0,len(numbers)):
+def LinearSearch(numbers, target):
+    for i in range (0, len(numbers)):
         if int(numbers[i]) == target:
             print(f"I found the number {str(target)} in the index {str(i)} of the list.")
             return i
