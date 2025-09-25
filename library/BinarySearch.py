@@ -12,10 +12,10 @@ def BinarySearch(list_parameter, target):
             return found
         
         if middle_item < target:
-            numbers = numbers[(index + 1):len(numbers)]
+            numbers = numbers[index:]
 
         elif middle_item > target:
-            numbers = numbers[0:index]
+            numbers = numbers[:index]
     
     print(f"Number {str(target)} was not found in the sorted list of numbers.")
     return found
