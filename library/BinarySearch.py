@@ -32,9 +32,9 @@ def BinarySearch(list_parameter = [], target = 0):
                         BinarySearch([-1,0,3,4,56],0) = 1
                 invalid BinarySearch([],5) = -1
                         BinarySearch([-1,0,3,4,56],70) = -1
-    @param      list_paramter, SORTED list of ints
-    @param      target, int which is the taget value of the search
-    @returns    index value of the target in the array, or -1 if the value
+    :param list_paramter: list - SORTED list of ints
+    :param target: int - the target value of the search
+    :return: int - index value of the target in the array, or -1 if the value
                 is not present, or if the list_parameter is empty
     """
 
